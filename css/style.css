@@ -4,3 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.navbar{
+        display: flex;
+        gap: 1.25rem;
+        padding-right: .625rem;
+        list-style:none;
+}
+
+.navBar li a {
+    text-decoration: none;
+    font-size:1.125rem;
+    color: #1F6E8C;
+    
+
+}
+.navBar li a:hover{
+    color: black;
+    background-color: grey;
+    text-shadow: 5px 5px 5px grey rgb(24,24,24);
+}
