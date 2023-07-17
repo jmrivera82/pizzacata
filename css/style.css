@@ -44,6 +44,185 @@ nav a:hover{
     color: black;
 }
 
+
+.contenido{
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   gap:10px;
+
+}
+.imagen {
+    gap:10px;
+    max-width: 100%;
+    height: auto;
+    width: auto/9; 
+}
+
+
+.container{
+    width:100%;
+    /*min-height: 100vh0;*/
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+}
+
+.contenido-cards{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+.contenido-cards .card{
+    /*flex:content;*/
+    margin:10px 10px;
+    box-shadow: 0px; 2px 8px 0px rgba(0,0,0,2);
+}
+
+.contenido-cards .card img{
+    width:100%;
+    height: 150px;
+
+}
+
+.contenido-cards .card h3{
+    margin: 15px 0px;
+    font-size:14px;
+    color: grey;
+}
+.contenido-cards .card p{
+    font-size:12px;
+    line-height: 1.5px;
+    padding:0px 10px;
+    margin-bottom:20px;
+}
+                                                                                                                                                                                                                                                                                                                                            
+/*footer*/
+
+.pie-de-pagina{
+    width: 100%;
+    background-color: #1F6E8C;
+}
+
+.pie-de-pagina .pie1{
+    width:100%;
+    max-width: 1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    padding:45px 0px;
+}
+
+.pie-de-pagina .pie1 .box figure{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-de-pagina .pie1 .box figure img{
+    width: 50px;
+    
+}
+
+.pie-de-pagina .pie1 .box h2{
+    color: whitesmoke;
+    margin-bottom: 25px;
+    font-size: 14px;
+
+}
+.pie-de-pagina .pie1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-de-pagina .pie1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height:45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-de-pagina .pie1 .red-social a:hover{
+    color: #1F6E8C;
+}
+
+.pie-de-pagina .pie2{
+    background-color: #1F6E8C;
+    padding: 15px 10px;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+.pie-de-pagina .pie2 small{
+    font-size: 15px;
+}
+
+
+
+form{
+    width:450px;
+    margin:auto;
+    background:rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h4{
+    color:#1F6E8C;
+    text-align:center;
+    margin:0;
+    font-size: 30px;
+    margin-bottom:20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing:border-box;
+    font-size:14px;
+    border:none;
+}
+
+/*textarea{
+    min-height: 100px;
+    max-height:200px;
+    max-width:100px;
+}*/
+#boton{
+    background: #31384A;
+    color:whitesmoke;
+    padding:20px;
+
+}
+
+#boton:hover{
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+
+
 @media (max-width:1024px){
     header{
         justify-content: space-around;
@@ -63,17 +242,44 @@ nav a:hover{
     nav{
         padding: 10px;
     }
+    .contenido{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: bottom;
+        }
+    .contenido-cards{
+        flex-direction:column;
+    }
+    .pie-de-pagina .pie1{
+        width:90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding:35px 0px;
+
+    }
+
  
 }
 
-@media (max-width:475px)
+@media (max-width:475px) /*mejorar media query*/
 {
     header{
         flex-direction:column;
-        flex: content;
     }
     navbar li a{
         font-size: 1.4375rem;
+    }
+    .pie-de-pagina .pie1{
+        width:75%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:20px;
+        padding:25px 0px;
+
+    }
+
+    form{
+        width:100%;
     }
  
 }
@@ -83,10 +289,30 @@ nav a:hover{
     header{
         flex-direction: column;
     }
+    .pie-de-pagina .pie1{
+        width:60%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:20px;
+        padding:25px 0px;
+
+    }
+    form{
+        width:100%;
+    }
 }
 
 @media(max-width:320){
     header{
         flex-direction: column;
+    }
+    .pie-de-pagina .pie1{
+        width:50%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:10px;
+        padding:15px 0px;
+
+    }
+    form{
+        width:100%;
     }
 }
