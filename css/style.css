@@ -1,26 +1,92 @@
-    
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.navbar{
-        display: flex;
-        gap: 1.25rem;
-        padding-right: .625rem;
-        list-style:none;
+body{
+    font-family: sans-serif;
+    margin:0;
 }
 
-.navBar li a {
+a{
     text-decoration: none;
-    font-size:1.125rem;
-    color: #1F6E8C;
-    
+    color: whitesmoke;
 
 }
-.navBar li a:hover{
+header{
+    display: flex;
+    min-height: 70px; /*altura*/
+    background-color:#1F6E8C ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+    
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
     color: black;
-    background-color: grey;
-    text-shadow: 5px 5px 5px grey rgb(24,24,24);
+}
+
+@media (max-width:1024px){
+    header{
+        justify-content: space-around;
+        gap: 1.25rem;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:768px){
+   
+    header{
+       flex-direction: column;
+       gap: 1.25rem;
+
+        }
+    nav{
+        padding: 10px;
+    }
+ 
+}
+
+@media (max-width:475px)
+{
+    header{
+        flex-direction:column;
+        flex: content;
+    }
+    navbar li a{
+        font-size: 1.4375rem;
+    }
+ 
+}
+
+@media(max-width:375){
+
+    header{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:320){
+    header{
+        flex-direction: column;
+    }
 }
