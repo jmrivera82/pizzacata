@@ -207,9 +207,46 @@ textarea{
 
 
 
+/*pagina clientes*/
+
+.clientes a{
+    text-align: center;
+    font-size: 20px;
+    color:#0E2954;
+    background-color:#c1daea;
+    align-items: center;
+ }
+
+
+/*pagina servicios*/
+
+
+/*se reciclan cards*/
 
 
 
+
+/*pagina empresa*/
+.nuestra-empresa{
+    width:100%;
+    height:300px;
+    line-height: "1.5";
+    background-color: whitesmoke;
+    font-size:15px;
+    color: #1F6E8C;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    gap: 30px;
+}
+
+.imagen{
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+}
 
 @media (max-width:1024px){
     header{
