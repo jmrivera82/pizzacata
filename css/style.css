@@ -79,7 +79,7 @@ nav a:hover{
 .contenido-cards .card{
     /*flex:content;*/
     margin:10px 10px;
-    box-shadow: 0px; 2px 8px 0px rgba(0,0,0,2);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,2);
 }
 
 .contenido-cards .card img{
