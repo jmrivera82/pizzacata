@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFORMATICA-404</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
 </head>
 <body>
     
     <header>
-        <a href="#" class="logo">
-            <img src="../asset/img/logo.png" alt="logo empresa">
-            <h1 class="nombre-empresa">INFORMATICA404</h1>
-        </a>
-        <nav>
-            <a href="../index.html">INICIO</a>
-            <a href="servicios.html">SERVICIOS</a>
-            <a href="empresa.html">EMPRESA</a>
-            <a href="clientes.html">CLIENTES</a>
-            <a href="contacto.html">CONTACTO</a>
-        </nav>
-</header>
+        <div class="navbar">
+            <div class="container flex">
+                <!--<img class="img" src="./asset/img/logo.png" alt="logo empresa">-->
+                <h1 class="logo">INFORMATICA404</h1>
+                    <nav>
+                        <ul>
+                            <li class="nav"><a class="outline" href="../index.html">Inicio</a></li>
+                            <li class="nav"><a class="outline" href="./servicios.html">Servicios</a></li>
+                            <li class="nav"><a class="outline" href="./empresa.html">Empresa</a></li>
+                            <li class="nav"><a class="outline" href="./clientes.html">Clientes</a></li>
+                            <li class="nav"><a class="outline" href="./contacto.html">Contacto</a></li>    
+                        </ul>           
+                    </nav>
+            </div>
+        </div>
+    </header>
 
 <main>
 
@@ -38,68 +43,61 @@
     </div>
 
         
-        <div class="container">
-            <div class="contenido-cards">
-                <div class="card">
-                    <img src="../asset/img/emp1.png">
-                    <h3>TECNICO EN REDES</h3>
-                    <p>linus Van Rossum</p>
-                    <p>lvanrossum@404notfound.cl</p> 
-                </div>   
-                <div class="card">
-                    <img src="../asset/img/emp4.jpg">
-                    <h3>TECNICO DE TERRENO</h3>
-                    <p>Mark Callaway</p>
-                    <p>mcallaway@404notfoud.cl</p>
-                </div>  
-                <div class="card">
-                    <img src="../asset/img/emp2.png">
-                    <h3>INGENIERA EN INFORMÁTICA</h3>
-                    <p>Jade Lovelace</p>
-                    <p>jlovelace@404notfound.cl</p> 
+    <section class="miempresa">
+        <div class="container-empresa">
+            <div class="personas">
+                <div class="card1">
+                    <div class="foto">
+                        <img src="" alt="">
+                    </div>
+                    <h3>Elizabeth</h3>
+                    <p>He aprendido desarrollo web usando esta plataforma y diré que es la mejor plataforma para aprender. Definitivamente vale la pena la inversión!</p>
                 </div>
-                <div class="card">
-                    <img src="../asset/img/emp3.png">
-                    <h3>GERENCIA</h3>
-                    <p>José Rivera</p>
-                    <p>jrivera@404notfound.cl</p>
-                </div>   
-           </div>        
+                <div class="card1">
+                    <div class="foto">
+                       <img src="" alt="">
+                    </div>
+                    <h3>Paulina</h3>
+                    <p>He aprendido redacción usando esta plataforma y diré que es la mejor plataforma para aprender. Definitivamente vale la pena la inversión!</p>
+                </div>
+                <div class="card1">
+                    <div class="foto">
+                        <img src="" alt="">
+                    </div>
+                    <h3>José</h3>
+                    <p>He aprendido marketing de afiliados usando esta plataforma y diré que es la mejor plataforma para aprender. Definitivamente vale la pena la inversión!</p>
+                </div>
+            </div>
         </div>
+    </section>
 
 
 
 
 </main>
 
-
-    <footer class="pie-de-pagina">
-        <div class="pie1">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="../asset/img/logo.png" alt="">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h4>SOBRE NOSOTROS</h4>
-                <P>Sitio desarrollado por 404 Not Found Company, Pucón Chile</P>
-            </div>
-            <div class="box">
-                <h4>SIGUENOS</h4>
-                <div class="redessociales">
-                    <img src="../asset/img/whatsapp.png">
-                    <img src="../asset/img/facebook (2).png">
-                    <img src="../asset/img/twitter.png">
-                    <img src="../asset/img/instagram.png">
-                </div>
-            </div>
+<footer>
+    <div class="personas">
+        <div class="copyright">
+            <b>&copy; 2023 INFORMATICA404 - Todos los derechos reservados</b>
         </div>
-        <div class="pie2">
-            <small>&copy; 2023 <b>INFORMATICA404</b> - Todos los derechos reservados</small>
+        <div class="copyright">
+            <b>Sitio desarrollado por 404NotFound Company</b>
         </div>
+        <div class="redessociales">
+            <img class="icon" src="../asset/img/facebook (2).png">
+            <img class="icon" src="../asset/img/instagram.png">
+            <img class="icon" src="../asset/img/twitter.png">
+            <img class="icon" src="../asset/img/whatsapp.png">
+        </div>
+    </div>
+</footer>
+ 
 
-    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
 </body>
 </html>
