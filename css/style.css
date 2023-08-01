@@ -47,7 +47,7 @@ li{
     list-style-type: none;
 }
 
-.container .flex{
+.container-flex{
     margin: 0 auto;
     max-width: 1200px;
     overflow: visible;
@@ -66,7 +66,7 @@ li{
     line-height: 1.2;
 }
 
-.navbar .flex{
+.navbar .container-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,49 +88,14 @@ li{
     border-bottom: 3px solid lightgreen;
   }
 
-/*.contenido{
-   display: flex;
-   justify-content: right;
-   align-items: center;
-   gap:10px;
 
-}*/
 
 /*section proncipal*/
 
 
 .flex-ppal{
     display:flex;
-    flex-direction: row;
-}
-
-.flex-ppal .text1{
-    position: absolute;
-    top: 130px;
-    right: 30px;
     padding: 20px;
-    font-size: 40px;
-    font: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    text-align: right;
-   
-}
-.flex-ppal .text2{
-    position: absolute;
-    top: 200px;
-    right: 30px;
-    padding: 20px;
-    font-size: 30px;
-    font: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: right;
-}
-
-.flex-ppal .fotoprincipal{
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    padding: 10px;
 }
 
 .grid10 {
@@ -150,7 +115,7 @@ li{
     color: #0E2954;
     text-align: center;
     font-size: 16px;
-    padding: 40px;
+    padding: 25px;
     line-height: 1.6;
 }
 
@@ -158,7 +123,6 @@ li{
 
 .container2{
     width:100%;
-    /*min-height: 100vh0;*/
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -307,10 +271,37 @@ textarea{
 
 /*pagina servicios*/
 
+.textoppal{
+    color: #0E2954;
+    font-size: 18px;
+}
 
-/*se reciclan cards*/
+.grid30{
+    display: grid;
+    color: #0E2954;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
 
+.grid302{
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
 
+}
+.grid30 .grid303, .grid304{
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.8;
+
+}
+
+.flex-servicios{
+    color: #0E2954;
+    padding: 20px;
+    text-align: center;
+}
 
 
 /*pagina empresa*/
@@ -382,14 +373,14 @@ textarea{
 /*MEDIA QUERIES*/
 
 @media (max-width:1024px){
-    .container .flex{
+    .container-flex{
         flex-direction: column;
-     
+        align-items: flex-start;
     }
-
     .grid-ft{
         grid-template-columns:min-content;
     }
+    
 
 }
 
@@ -414,8 +405,8 @@ textarea{
 
 @media (max-width:475px) /*mejorar media query*/
 {
-    .navbar{
-        flex-direction:row;
+    .container-flex{
+        flex-direction:column;
         align-items: center;
 
     }
