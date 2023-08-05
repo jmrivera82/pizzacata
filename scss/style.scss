@@ -1,0 +1,37 @@
+
+header{
+    background-color: whitesmoke;
+
+    .navbar{
+        background-color: #1F6E8C;
+        height: 70px;
+        padding: 0 30;
+    }
+
+    .container-flex{
+        margin: 0 auto;
+        max-width: 1200px;
+        overflow: visible;
+    }
+    
+    /*menú de navegación*/
+    a{
+        color: white;
+        padding:10px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    a:hover {
+        color: lightgreen;
+        border-bottom: 3px solid lightgreen;
+      }
+
+
+
+}
+
+
+
+.flex-ppal{
+    padding: 20px;
+}
