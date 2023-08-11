@@ -1,6 +1,6 @@
-# PROYECTO INFORMATICA404
+# PROYECTO PIZZA CATA
 
-## **Página web orientada a presentación de servicios para la reparación, instalación, configuración y mantenimiento de equipos y sistemas informáticos.
+## **Presentación de nueva pizzería**
 ### 
 ### Estamos Ubicados en Pucón, en el centro del Sur de Chile.
 
