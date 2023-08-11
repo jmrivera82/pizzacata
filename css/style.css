@@ -12,6 +12,9 @@
 
 body{
     background-color: #fff59d;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
 }
 
 /* inicio header*/
@@ -208,7 +211,13 @@ button:hover{
 
 /*footer*/
 
+    footer{
+        bottom:0;
+        position: fixed;
+        width:100%;
+        left: 0;
 
+    }
 
     .footer{
         background:#fff59d;
@@ -217,6 +226,7 @@ button:hover{
         padding: 20px;
         align-items: center;
         justify-content: center;
+        margin-top: auto;
     }
 
     .footer-info p{
@@ -244,22 +254,14 @@ button:hover{
         transition: color .4s ease;
     }
 
-
- 
-    
-
-    
-*/
     /*formulario*/
 
     .container-form{
         width: 100%;
-        max-width: 1100px;
         margin: auto;
         display: grid;
         grid-template-columns: repeat (2,1fr);
         grid-gap: 50px;
-        margin-top: 90px;
     }
 
     .container-form h2{
@@ -270,7 +272,6 @@ button:hover{
     .container-form p{
         font-size: 17px;
         line-height: 1.6;
-        margin-bottom: 30px;
     }
 
     .container-form a{
@@ -278,14 +279,13 @@ button:hover{
         display: inline-block;
         text-decoration: none;
         width: 100%;
-        margin-bottom: 15px;
-        color: black;
+        color: grey;
         font-weight: 700;
 
     }
 
     .container-form a i{
-        color: lightgreen;
+        color: grey;
         margin-right: 10px;
 
     }
@@ -320,7 +320,7 @@ button:hover{
     }
 
     .container-form .btn-enviar:hover{
-        background-color: #1b3039;
+        background-color: #ffbc0e;
     }
 
 
